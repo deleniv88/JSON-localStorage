@@ -1,0 +1,205 @@
+@import url('../styles/reset.css');
+
+.container{
+    width: 100%;
+    height: 781px;
+    background-image: url('../images/coastal-city-sea-dreaming-summer-photography-town-blue-sky-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+/*start style Header*/
+.header{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sign-text{
+    background-image: url('../images/signUp.png');
+    background-repeat: no-repeat;
+    width: 674px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+/*end style Header*/
+/*start style First Name, Last Name, Email, Password*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textFname, .textLname, .textEmail, .textPass{
+    width: 550px;
+    height: 50px;
+    text-indent: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+.textFname:focus, .textLname:focus, .textEmail:focus, .textPass:focus{
+    outline:none;
+    border-color:#ffa125;
+    box-shadow:0 0 10px #ffa125; 
+}
+.check{
+    background-size: 0px;
+    background-repeat: no-repeat;
+    background-image: url('../images/check.png');
+    background-position: calc(100% - 10px) center;
+}
+.error{
+    background-size: 0px;
+    background-repeat: no-repeat;
+    background-image: url('../images/error.png');
+    background-position: calc(100% - 10px) center;
+}
+.floating-label {
+	position: absolute;
+	pointer-events: none;
+    color: gray;
+	top: 22px;
+	left: 10px;
+	transition: 0.2s ease all;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+.user-input-wrp {
+	position: relative;
+	width: 550px;
+}
+.user-input-wrp input:focus ~ .floating-label,
+.user-input-wrp input:not(:focus):valid ~ .floating-label{
+	top: 9px;
+	left: 13px;
+    bottom: 10px;
+	font-size: 12px;
+	opacity: 1;
+}
+.modal-alert, .modal-alert-local{
+    width: 260px;
+    height: 30px;
+    background-color: brown;
+    position: absolute;
+    top: 58px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-indent: 15px;
+    border-radius: 5px;
+}
+.modal-alert-local{
+    width: 200px;
+}
+/*end style First Name, Last Name, Email, Password*/
+/*start style Sign Up*/
+#button, #signIn, #signOut{
+    width: 555px;
+    height: 40px;
+    background-color: rgb(245, 139, 0);
+    border-radius: 5px;
+    border:1px solid rgb(245, 139, 0);
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 0px;
+    color: white;
+    cursor: pointer;
+}
+#button:hover,#signIn:hover, #signOut:hover{
+    background-color: rgb(252, 134, 88);
+    border-radius: 5px;
+    border:1px solid rgb(252, 134, 88);
+    box-shadow:0 0 10px rgb(252, 134, 88);
+    cursor: pointer; 
+}
+#signOut{
+    margin-top: 40px;
+    background-color: bisque;
+    color: rgb(245, 139, 0);
+}
+
+#signOut:hover{
+    color: bisque;
+}
+
+.signNow, .signUpNow{
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signNow:hover, .signUpNow:hover{
+    color: rgb(245, 139, 0);
+}
+/*end style Sign Up*/
+/*start style Success Window*/
+#success, #signUp{
+    width: 600px;
+    height: 450px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.check-icon{
+    width: 600px;
+    height: 200px;
+    background-color: rgb(255, 228, 196, 0.8);
+    border-radius: 10px 10px 0px 0px;
+    background-image: url('../images/ok.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sign{
+    background-image: url('../images/Untitled-2.png');
+    background-color: rgb(255, 228, 196, 0.0);
+}
+.great, .signInForm{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(255, 127, 80,0.6);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.signInForm{
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.signInFName, .signInLName, .signInEmail{
+    background-color: rgb(0, 0, 0, 0.6);
+    border-bottom: 2px solid white;
+    padding: 0px 20px 0px 20px;
+    color: lightblue; 
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #5f25ff; 
+    font-family: 'Courier New', Courier, monospace;
+}
+/*end style Success Window*/
+
+
+
+
+
+
+
+
+
+
+

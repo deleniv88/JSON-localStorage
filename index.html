@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--header-->
+        <div class="header">
+            <div class="sign-text"></div>
+        </div>
+        <!--login table-->
+        <div class="row">
+            <div>
+                <!-- First name row-->
+                <form class="user-input-wrp">
+                    <input type="text" name="fname" class="textFname" id="fname" autocomplete="off" required>
+                    <span class="floating-label">First name</span>
+                    <div class="alertFN"></div>
+                </form>
+                <!-- Second name row-->
+                <form class="user-input-wrp">
+                    <input type="text" name="lname" class="textLname" id="lname" autocomplete="off" required>
+                    <span class="floating-label">Last name</span>
+                    <div class="alertLN"></div>
+                </form>
+                <!-- Email address row-->
+                <form class="user-input-wrp">
+                    <input type="text" name="email" class="textEmail" id="email" autocomplete="off" required>
+                    <span class="floating-label">Email address</span>
+                    <div class="alertEA"></div>
+                </form>
+                <!-- Password row-->
+                <form class="user-input-wrp">
+                    <input type="password" name="password" class="textPass" id="password" autocomplete="off" required>
+                    <span class="floating-label">Password</span>
+                    <div class="alertPW"></div>
+                </form>
+                <!-- Sign Up row-->
+                <button id="button">Sign Up</button>
+            </div>
+            <!--Sign in-->
+            <div class="signNow">
+                <p>Sign in now</p>
+            </div>
+        </div>
+        <!-- Success window-->
+        <div id="success">
+            <div class="check-icon"></div>
+            <div class="great">
+                <p class="signInFName"></p>
+                <p class="signInLName"></p>
+                <p class="signInEmail"></p>
+                <button id="signOut">Sign Out</button>
+            </div>
+        </div>
+        <!-- SignUp window-->
+        <div id="signUp">
+            <div class="check-icon sign"></div>
+            <div class="signInForm">
+                <!--User email-->
+                <form class="user-input-wrp">
+                    <input type="text" name="email" class="textEmail" id="emailSignIn" autocomplete="off" required>
+                    <span class="floating-label">Email address</span>
+                    <div class="alertEA"></div>
+                </form>
+                <!--User password-->
+                <form class="user-input-wrp">
+                    <input type="password" name="password" class="textPass" id="passwordSignIn" autocomplete="off"
+                        required>
+                    <span class="floating-label">Password</span>
+                    <div class="alertPWSign"></div>
+                </form>
+            </div>
+            <!--Sign In button-->
+            <button id="signIn">Sign in</button>
+            <!--Sign up-->
+            <div class="signNow signUpNow">
+                <p>Sign up now</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
